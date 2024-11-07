@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios - Geraldine Lashes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .description {
+            display: none;
+            color: #f9d6d6;
+            font-size: 0.9rem;
+        }
+        .card.expanded {
+            height: auto;
+        }
+        .card-title, .card-text {
+            color: #ffffff; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="img/Logo_Geralshes.png" alt="Geraldine Lashes Logo" height="40">
+                <h3>Geraldine Lashes</h3>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link location" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="servicios" class="vh-100 d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-1 fw-bold title">Nuestros Servicios<span class="dot">.</span></h1>
+            <p class="lead">Descubre todo lo que ofrecemos para realzar tu belleza</p>
+        </div>
+    </header>
+
+    <!-- Servicios Section -->
+    <section class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Servicios Disponibles</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Extensiones de Pestañas</h5>
+                            <p class="card-text">Realza tu mirada con nuestras extensiones de pestañas de alta calidad.</p>
+                            <p class="description">Nuestras extensiones son ligeras y cómodas, diseñadas para durar y realzar tu belleza natural. Utilizamos materiales de primera calidad que se adaptan a tus pestañas, logrando un efecto voluminoso y atractivo. Con una amplia variedad de estilos y longitudes, puedes personalizar tu mirada según tus preferencias, haciendo que cada cliente se sienta única y especial.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Lifting de Pestañas</h5>
+                            <p class="card-text">Dale un aspecto natural y curvado a tus pestañas con nuestro lifting.</p>
+                            <p class="description">Este tratamiento levanta tus pestañas naturales, dándoles una curva hermosa y duradera. A diferencia de las extensiones, el lifting trabaja con tus propias pestañas, mejorando su forma y apariencia sin necesidad de adhesivos. El resultado es un look fresco y natural, perfecto para quienes buscan resaltar su belleza sin complicaciones. Este servicio es ideal para cualquier ocasión, asegurando que tus ojos se vean radiantes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Tinte de Pestañas</h5>
+                            <p class="card-text">Intensifica el color de tus pestañas con nuestro servicio de tinte.</p>
+                            <p class="description">El tinte resalta tus pestañas, aportando un aspecto más definido y atractivo. Este tratamiento es perfecto para quienes tienen pestañas claras o desean un efecto más dramático. Con un producto suave y de larga duración, garantizamos que tu mirada sea impactante y sofisticada. Además, el tinte complementa otros tratamientos, como el lifting o las extensiones, creando un look integral que realza la belleza de tus ojos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño de Cejas</h5>
+                            <p class="card-text">Dale forma a tus cejas con nuestro servicio de diseño personalizado.</p>
+                            <p class="description">Un diseño adecuado de cejas enmarca tu rostro, resaltando tus rasgos. Nuestros expertos analizan la forma de tu cara y tus preferencias personales para crear un diseño que complemente tu belleza única. Utilizamos técnicas precisas y productos de calidad para asegurar un acabado natural. El diseño de cejas no solo mejora tu look, sino que también te brinda una mayor confianza en ti misma al sentirte más cómoda con tu apariencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Relleno de Pestañas</h5>
+                            <p class="card-text">Mantén tus pestañas llenas y voluminosas con nuestro servicio de relleno.</p>
+                            <p class="description">Nuestro servicio de relleno asegura que tus pestañas luzcan siempre perfectas. Ideal para mantener la densidad y longitud de tus extensiones, este tratamiento se realiza cada cierto tiempo para asegurar que tu mirada siga deslumbrante. Utilizamos técnicas cuidadosas para reemplazar las extensiones que han caído, logrando un acabado homogéneo. Este servicio es esencial para quienes desean mantener un look espectacular y bien cuidado sin interrupciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Pestañas en Zonas Especiales</h5>
+                            <p class="card-text">Extensiones de pestañas en zonas especiales para un look único.</p>
+                            <p class="description">Perfecto para ocasiones especiales donde quieres destacar aún más, este servicio se adapta a tus necesidades específicas. Podemos aplicar extensiones en áreas como el extremo de los ojos o el centro, creando un efecto de almendra o de gato. Ideal para eventos como bodas o sesiones fotográficas, donde cada detalle cuenta. Te ayudamos a resaltar tu belleza de una manera que resuene con tu estilo personal, asegurando que seas el centro de atención.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuidado Post-Tratamiento</h5>
+                            <p class="card-text">Asesoría en el cuidado adecuado de tus pestañas tras los tratamientos.</p>
+                            <p class="description">Te damos consejos para mantener tus pestañas en perfecto estado. La correcta rutina de cuidado post-tratamiento es fundamental para prolongar la duración de tus extensiones o el efecto de tu lifting. Te proporcionamos información sobre productos recomendados y técnicas de limpieza, así como advertencias sobre prácticas que debes evitar. Con el cuidado adecuado, tus pestañas se mantendrán saludables y hermosas por más tiempo, asegurando que tu mirada siempre brille.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Pack de Servicios Combinados</h5>
+                            <p class="card-text">Benefíciate de nuestros paquetes de servicios a precios especiales.</p>
+                            <p class="description">Aprovecha nuestros combos y ahorra mientras te cuidas. Nuestros paquetes combinan varios de nuestros servicios más populares, permitiéndote disfrutar de un look completo y coordinado. Estos combos son ideales para quienes buscan maximizar su experiencia y minimizar el tiempo y el costo. Cada paquete es diseñado con cuidado, asegurando que obtengas un resultado final espectacular y acorde a tus deseos, todo en una sola visita.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultoría Personalizada</h5>
+                            <p class="card-text">Consulta con nuestros expertos para el tratamiento ideal para ti.</p>
+                            <p class="description">Te asesoramos en base a tus necesidades y tipo de piel. Nuestra consultoría personalizada tiene como objetivo entender tus preferencias y expectativas, garantizando que el tratamiento que elijas sea el más adecuado. Nuestros expertos están capacitados para ofrecerte un análisis detallado y recomendaciones que optimicen tu experiencia y resultados. Con esta consultoría, aseguramos que cada visita se convierta en una experiencia única, adaptada completamente a ti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Técnicas Avanzadas</h5>
+                            <p class="card-text">Ofrecemos técnicas de última generación para resultados sorprendentes.</p>
+                            <p class="description">Utilizamos productos y técnicas de vanguardia para un acabado perfecto. Nuestro equipo está continuamente capacitado en las últimas tendencias y desarrollos en el campo de la estética de pestañas, asegurando que recibas el mejor servicio disponible. Estas técnicas avanzadas no solo mejoran la apariencia, sino que también garantizan la salud de tus pestañas naturales. Al elegir nuestras técnicas, te aseguras de estar siempre a la moda y de disfrutar de resultados que superen tus expectativas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Maquillaje de Ojos</h5>
+                            <p class="card-text">Completa tu look con un maquillaje de ojos profesional.</p>
+                            <p class="description">Realzamos tus ojos con técnicas de maquillaje que encantan. Nuestro servicio de maquillaje de ojos está diseñado para complementar cualquier estilo, ya sea que busques un look sutil o uno más dramático. Utilizamos productos de alta calidad que garantizan una larga duración y una apariencia impecable. Te ayudamos a elegir los tonos y técnicas que mejor se adapten a tu estilo personal y ocasión, asegurando que tus ojos se conviertan en el centro de atención de tu look.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4" onclick="toggleDescription(this)">
+                        <div class="card-body">
+                            <h5 class="card-title">Tratamiento Hidratante</h5>
+                            <p class="card-text">Mantén tus pestañas y cejas hidratadas con nuestros tratamientos.</p>
+                            <p class="description">La hidratación es clave para mantener la belleza de tus pestañas y cejas. Nuestros tratamientos hidratantes están formulados específicamente para nutrir y fortalecer tus pestañas, previniendo la sequedad y la rotura. Además, la hidratación ayuda a mejorar la apariencia general, haciendo que tus pestañas y cejas se vean más saludables y brillantes. Este tratamiento es una adición perfecta a cualquier rutina de belleza, garantizando que tus ojos luzcan siempre radiantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Sobre Nosotros</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="por_que_existimos.html">Por qué existimos</a></li>
+                        <li><a href="que_hacemos.html">Qué hacemos</a></li>
+                        <li><a href="sobre_geraldine_lashes.html">Sobre Geraldine Lashes</a></li>
+                        <li><a href="modelo_de_trabajo.html">Modelo de trabajo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="donde_estamos.html">Dónde estamos</a></li>
+                        <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Información</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="noticias.html">Noticias</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p>geralshes@gmail.com</p>
+                    <p>+598 92 674 820</p>
+                    <p>Rincon 682 Esq Juncal<br>Montevideo, Uruguay</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h2 class="footer-logo">Geraldine Lashes</h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Políticas de Privacidad</a></li>
+                        <li class="list-inline-item"><a href="#">Términos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 Geraldine Lashes Internacional. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
